@@ -57,6 +57,9 @@ form{
     background-color: #f2f2f2;
     color: #0065FC;
     display:flex;
+    
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .iconloc i{
@@ -94,23 +97,22 @@ button i{
 .filterslist{
     display:flex;
     flex-wrap:wrap;
-    margin:10px;
-
+    
 }
 
 .filter{
-    height:40px;
-    margin-bottom: 10px;
     display:flex;
     border: #f2f2f2 2px solid;
     border-radius: 50px;
     font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .filter i{
     color:#0065FC;
     margin:0px;
-    background-color: #f2f2f2;
+    background-color: #DEEBFF;
     margin: auto;
     padding:12px;
     border-radius: 50px;
@@ -120,7 +122,7 @@ button i{
 .filter i:hover{
     color:#ffffff;
     margin:0px;
-    background-color: #000000;
+    background-color: #0065FC;
     margin: auto;
     padding:12px;
     border-radius: 50px;
@@ -128,11 +130,11 @@ button i{
 
 .filter:hover{
 
-    border: #000000 2px solid;
+    border: #0065FC 2px solid;
     background-color: #f2f2f2;
     border-radius: 50px;
     font-weight: bold;
-    color: #000000;
+    color: #0065FC;
 }
 
 
@@ -159,8 +161,12 @@ article{
     padding:5px;
     margin-bottom: 20px;
     background-color: #ffffff;
+    transition: background-color 1s ease-out 100ms
 }
 
+article:hover{
+    background-color: #dadada;
+}
 
 aside .entete{
     display:flex;
@@ -382,9 +388,9 @@ p i{
         font-size: large;
     } 
     
-    button i{
+
+    .fa-magnifying-glass{
         display:none;
-        color:#0065FC;
     }
     
     p strong{
@@ -405,7 +411,6 @@ p i{
     
     .popular article img{
         width: 100%;
-        height:100%;
         border-radius: 15px;
         margin: 0px 0px 0px 0px;
     }
@@ -466,9 +471,9 @@ p i{
         width:30%;
     }
 
+
     .popular article{
         display:flex;
-        justify-content: space-between;
         height:150px;
     }
 
@@ -509,28 +514,6 @@ p i{
         align-self: flex-start;
     }
 
-    header nav{
-        width:30%;
-        display:flex;
-    }
-
-
-    header nav ul a{
-        border-bottom:none;
-        width:50%;
-        height:100%;
-        text-align:center;
-        font-size: 18px;
-    }
-    
-    header nav ul a:hover{
-        border-bottom:none;
-        border-top: #0065FC 2px solid;
-        text-align:center;
-        color:#0065FC;
-    }
-
-
 
     form{
         height:50px;
@@ -538,6 +521,8 @@ p i{
         display:flex;
         border: #f2f2f2 2px solid;
         border-radius: 15px;
+        
+        margin: 10px 0px;
     }
 
     .popular .description h3{
@@ -604,8 +589,8 @@ p i{
     }
     
     .activities article img{
-        width: 100%;
         height:100%;
+        width:100%;
         border-radius: 15px;
         margin: 0px 0px -100px 0px;
     }
@@ -625,21 +610,52 @@ p i{
     .filters{
         display:flex;
         flex-wrap: wrap;
+        justify-content: flex-start; 
     }
 
     .filters h3{
-        text-align: center;
-        padding-right: 10px;
-        width:5%;
-    }
-    .filters .filterlist{
-        width:95%;
+        padding-right: 20px;
     }
     .filters p{
         width:100%;
     }
 
+    .filterslist {
+        width:90%;
+    }
 
 
+    header nav{
+        width:100%;
+        max-width: 500px;
+    }
+
+
+    
+    header ul{
+        list-style-type: none;
+        display: flex;
+        padding:0px;
+        margin:0px;
+        height:100%;
+    }
+
+
+    header ul a{
+        border-bottom:none;
+        border-top: #f2f2f2 4px solid;
+        display:flex;
+
+    }
+
+
+    header ul li{
+        margin:auto;
+    }
+    header ul a:hover{
+        
+        border-bottom:none;
+        border-top: #0065FC 4px solid;
+    }
 
 }
