@@ -119,6 +119,7 @@ button i {
     font-weight: bold;
     margin-right: 20px;
     margin-bottom: 10px;
+    transition: 0.5s;
 }
 
 .filter i {
@@ -128,6 +129,8 @@ button i {
     margin: auto;
     padding: 12px;
     border-radius: 50px;
+    
+    transition: 0.5s;
 }
 
 .filter:hover i{
@@ -170,6 +173,7 @@ article {
     background-color: #ffffff;
     animation-name: scale_article;
     animation-duration: 1.5s;
+    transition: 0.3s;
 }
 
 article:hover {
@@ -344,7 +348,6 @@ p i {
         height: 180px;
         justify-content: space-between;
         margin-bottom: 30px;
-       ;
     }
 
     .popular .imgarticle {
